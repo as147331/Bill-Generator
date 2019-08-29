@@ -62,7 +62,7 @@ while ch=='y' or ch=='Y':
 
 print ('\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n')
 filename=raw_input('Enter filename to save: ')
-fob=open(filename+'.txt','w+')
+fob=open(filename+'.pdf','w+')
 fob.write('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n')
 filedatetime=d_date.strftime("  %d-%m-%Y\t\t\t\t\t  Bill Generator\t\t\t\t\t  %I:%M:%S %p")
 fob.write(filedatetime)
@@ -116,4 +116,4 @@ def excelsave():
 		print('File Already Opened. Please Close and try again.')
 excelsave()
 
-ctypes.windll.user32.MessageBoxA(0,"Bill Create successfully in a text and Excel file "+filename+".txt and "+filename+".xlsx","Message",0)
+ctypes.windll.user32.MessageBoxA(0,"Bill Create successfully in a pdf and Excel file "+filename+".pdf and "+filename+".xlsx","Message",0)
