@@ -8,13 +8,13 @@ qty=[]
 rate=[]
 ch='y'
 
-os.system("title Bill Generator by Sandeep")
+os.system("title Bill Generator by bhumika")
 
 d_date = datetime.datetime.now()
 reg_format_date = d_date.strftime("  %d-%m-%Y\t\t\t\t\t  Bill Generator\t\t\t\t\t  %I:%M:%S %p")
-print '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+print 
 print reg_format_date
-print '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
+print 
 
 def show():
 	print '\nItemname\t\t\t\t'+'\tRate\t'+'Qty\t'+'Amount'
